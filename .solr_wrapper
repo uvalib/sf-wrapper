@@ -1,0 +1,8 @@
+# Place any default configuration for solr_wrapper here
+version: 6.4.0
+# port: 8983
+instance_dir: /sf-wrapper/tmp/solr
+collection:
+  persist: true
+  dir: /sf-wrapper/solr/config/
+  name: libra2

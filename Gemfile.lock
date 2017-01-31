@@ -1,0 +1,24 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    faraday (0.11.0)
+      multipart-post (>= 1.2, < 3)
+    fcrepo_wrapper (0.8.0)
+      ruby-progressbar
+    multipart-post (2.0.0)
+    ruby-progressbar (1.8.1)
+    rubyzip (1.2.0)
+    solr_wrapper (0.20.0)
+      faraday
+      ruby-progressbar
+      rubyzip
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  fcrepo_wrapper
+  solr_wrapper
+
+BUNDLED WITH
+   1.14.2
