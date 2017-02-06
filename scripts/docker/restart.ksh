@@ -48,4 +48,4 @@ docker rmi $NAMESPACE/$INSTANCE:current
 docker tag -f $NAMESPACE/$INSTANCE:latest $NAMESPACE/$INSTANCE:current
 
 # run it
-docker run -t -d $PORT_OPT --name $NAME --restart=always $NAMESPACE/$INSTANCE:latest
+docker run -t -d $PORT_OPT --log-opt tag=$NAME --name $NAME --restart=always $NAMESPACE/$INSTANCE:latest
