@@ -3,12 +3,18 @@ if [ -z "$DOCKER_HOST" ]; then
    exit 1
 fi
 
+if [ $# -ne 1 ]; then
+   echo "$0 [0|1|2|3|4]"
+   exit 1
+fi
+
 # set the definitions
 INSTANCE=sf-wrapper
 NAMESPACE=uvadave
+NAME=$INSTANCE-$1
 
 # stop the running instance
-docker stop $INSTANCE
+docker stop $NAME
 
 # remove the instance
-docker rm $INSTANCE
+docker rm -f $NAME
