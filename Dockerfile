@@ -14,7 +14,7 @@ RUN gem install bundler --no-ri --no-rdoc
 
 # create work directory
 ENV APP_HOME /sf-wrapper
-RUN mkdir $APP_HOME
+RUN mkdir $APP_HOME && mkdir $APP_HOME/tmp
 
 ADD . $APP_HOME
 
