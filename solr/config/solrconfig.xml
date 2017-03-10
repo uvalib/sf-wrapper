@@ -134,7 +134,7 @@
        <str name="facet">true</str>
        <str name="facet.mincount">1</str>
 
-       <str name="spellcheck">true</str>
+       <str name="spellcheck">false</str>
        <str name="spellcheck.dictionary">default</str>
        <str name="spellcheck.onlyMorePopular">true</str>
        <str name="spellcheck.extendedResults">true</str>
@@ -205,6 +205,7 @@
     <!-- a spellchecker built from a field of the main index, and
          written to disk
       -->
+<!--
     <lst name="spellchecker">
       <str name="name">default</str>
       <str name="field">spell</str>
@@ -232,6 +233,7 @@
       <str name="accuracy">0.7</str>
       <str name="buildOnOptimize">true</str>
     </lst>
+-->
 
     <!-- a spellchecker that uses a different distance measure -->
     <!--
@@ -273,6 +275,7 @@
       -->
   </searchComponent>
 
+<!--
   <searchComponent name="suggest" class="solr.SuggestComponent">
     <lst name="suggester">
       <str name="name">mySuggester</str>
@@ -293,6 +296,7 @@
       <str>suggest</str>
     </arr>
   </requestHandler>
+-->
 
   <requestHandler name="/update/extract" class="org.apache.solr.handler.extraction.ExtractingRequestHandler">
     <lst name="defaults">
